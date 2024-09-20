@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2.7</title>
+    <style>
+        div{
+            color: white;
+        }
+        div.lilac{
+            background-color: blueviolet;
+            width: 150px;
+            height: 100px;
+            position: static;
+        }
+        div.red{
+            background-color: darkred;
+            width: 150px;
+            height: 100px;
+            position: relative;
+        }
+        div.orange{
+            background-color: peru;
+            width: 150px;
+            height: 100px;
+            position: relative;
+            left: 30px;
+            bottom: 30px;
+        }
+        div.pink{
+            background-color: indianred;
+            width: 600px;
+            height: 350px;
+            position: relative;
+            
+            div.purpule{
+                background-color: indigo;
+                width: 300px;
+                height: 180px;
+                position: absolute;
+                left: 300px;
+                bottom: 60px;
+            }
+        }
+        div.purpule{
+            background-color: indigo;
+            width: 300px;
+            height: 180px;
+            position: absolute;
+            left: 308px;
+            bottom: 350px;
+        }
+        div.green{
+            background-color: forestgreen;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="lilac">It's a static div!</div>
+    <div class="red">It's a relative div!</div>
+    <div class="orange">It's a relative div!</div>
+    <div class="pink">
+        It's a relative div!
+        <div class="purpule">It's an absolute div with relative parent!</div>
+    </div>
+    <div class="green">It's a fixed div!</div>
+</body>
+</html>

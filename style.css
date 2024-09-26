@@ -1,0 +1,63 @@
+@media (max-width: 800px) and (min-width: 0){
+    div.text{
+        flex: 1;
+    }
+}
+@media (min-width: 800px){
+    div.text{
+        max-width: min-content;
+        min-width: 540px;
+    }
+    main{
+        justify-content: center;
+    }
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+div.text{
+    padding: 30px;
+    padding-top: 20px;
+    text-align: justify;
+}
+div.page{
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    max-width: 120px;
+    min-width: 120px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    min-height: calc(100vh - 87px);
+}
+header{
+    color: white;
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.text::first-letter{
+        font-size: 25px;
+        color: red;
+}
+p:hover{
+    background-color: green;
+}
+div.text::selection{
+    background: green;
+    color: white;
+}

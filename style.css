@@ -1,0 +1,138 @@
+@media (min-width: 1150px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    div.page{
+        width: 180px;
+        min-width: 180px;
+        margin-right: 20px;
+    }
+    div.adv{
+        width: 181px;
+        position: fixed;
+        left: 70%;
+    }
+}
+@media (max-width: 1150px) and (min-width: 853px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    div.adv{
+        display: none;
+    }
+    div.page{
+        width: 180px;
+        min-width: 180px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 852px){
+    div.page{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.post{
+        margin: 0 auto;
+    }
+    p.page{
+        margin: 12px;
+    }
+    div.adv{
+        display: none;
+    }
+}
+main{
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e1e5eb;
+    padding-top: 50px;
+}
+div.post{
+    display: flex;
+    flex-direction: column;
+    width: 484px;
+    text-align: justify;
+    margin-right: 16%;
+}
+p.page{
+    padding: 5px;
+    color: #507299;
+}
+p.header{
+    margin-top: 0;
+    border-bottom:solid 3px #d0d0d0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+p.text{
+    margin: 0;
+}
+img.cat{
+    width: 420px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #8b8b8b;
+    padding: 5px;
+}
+div.text{
+    border: solid 2px #d0d0d0;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+div.textadv{
+    border: solid 2px #d0d0d0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0;
+    padding: 10px;
+    margin: 10px;
+}
+p.adv{
+    background-color: #e1e5eb;
+}
+p.adv1{
+    margin-left: 5px;
+}
+body{
+    margin: 0;
+}
+p.like{
+    float: left;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #507299;
+}
+p.Comment{
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border-top: solid 3px #d0d0d0;
+    color: #507299;
+}
+header{
+    background-color: #3e5f85;
+    position: fixed;
+    padding: 10px;
+    padding-bottom: 2px;
+    padding-left: 13%;
+    width: 100%;
+}
+p.page:hover{
+    background-color: #d5dadf;
+}
+p.text::selection{
+    background-color:#e1e5eb ;
+    color: green;
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    margin: 10px;
+    background-color: #fff;
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 4px blue;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right; /* Выравнивание текста по правому краю */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; /* Обеспечиваем выравнивание элементов справа */
+    align-items: center;
+    direction: ltr;
+    white-space: nowrap; /* Чтобы текст не переносился на следующую строку */
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.button {
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+.clear {
+    background-color: #f0f0f0;
+}
+
+.delete {
+    background-color: #ffa500;
+    color: white;
+}
+
+.equal {
+    background-color: #f0f0f0;
+    grid-row: span 2;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+.current-number {
+    color: black; /* Цвет для текущего числа */
+    margin: 0 5px; /* Отступы между числами */
+}
+
+.previous-input {
+    opacity: 0.5; /* Прозрачность для остальной части ввода */
+}
